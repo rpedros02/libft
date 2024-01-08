@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strequ.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rucorrei <rucorrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/08 19:06:51 by rucorrei          #+#    #+#             */
-/*   Updated: 2024/01/08 19:16:52 by rucorrei         ###   ########.fr       */
+/*   Created: 2024/01/08 20:57:10 by rucorrei          #+#    #+#             */
+/*   Updated: 2024/01/08 20:58:28 by rucorrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strequ(const char *s1, const char *s2)
+#include "libft.h"
+
+char	*ft_strncat(char *dest, const char *src, size_t n)
 {
-	if (s1 && s2)
+	size_t	i;
+	size_t	j;
+
+	i = 0;
+	while (dest[i] != '\0')
+		i++;
+	j = 0;
+	while (src[j] != '\0' && j < n)
 	{
-		while (*s1 && *s2 && *s1 == *s2)
-		{
-			s1++;
-			s2++;
-		}
-		if (!(*s1 - *s2))
-			return (1);
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	return (0);
+	dest[i] = '\0';
+	return (dest);
 }

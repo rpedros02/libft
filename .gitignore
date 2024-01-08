@@ -1,3 +1,5 @@
 *.o
 *.a
+*.sh
 author
+test.c

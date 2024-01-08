@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strequ.c                                        :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rucorrei <rucorrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/08 19:06:51 by rucorrei          #+#    #+#             */
-/*   Updated: 2024/01/08 19:16:52 by rucorrei         ###   ########.fr       */
+/*   Created: 2024/01/08 20:43:49 by rucorrei          #+#    #+#             */
+/*   Updated: 2024/01/08 20:49:26 by rucorrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strequ(const char *s1, const char *s2)
+#include "libft.h"
+
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-	if (s1 && s2)
+	size_t	i;
+
+	if (!dest && !src)
+		return (0);
+	i = 0;
+	while (i < n)
 	{
-		while (*s1 && *s2 && *s1 == *s2)
-		{
-			s1++;
-			s2++;
-		}
-		if (!(*s1 - *s2))
-			return (1);
+		((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
+		if (((unsigned char *)src)[i] == c)
+			return (((unsigned char *)dest) + i + 1);
+		i++;
 	}
-	return (0);
+	return (NULL);
 }
