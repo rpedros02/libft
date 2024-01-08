@@ -6,7 +6,7 @@
 /*   By: rucorrei <rucorrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/07 20:37:56 by rpcs02            #+#    #+#             */
-/*   Updated: 2024/01/08 22:50:59 by rucorrei         ###   ########.fr       */
+/*   Updated: 2024/01/08 22:59:19 by rucorrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-char	*ft_atoi(const char *str);
+int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(char c);
 int		ft_isalpha(char c);

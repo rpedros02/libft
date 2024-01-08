@@ -6,13 +6,13 @@
 /*   By: rucorrei <rucorrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 18:57:24 by rucorrei          #+#    #+#             */
-/*   Updated: 2024/01/08 19:01:44 by rucorrei         ###   ########.fr       */
+/*   Updated: 2024/01/08 22:58:44 by rucorrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	strcmp(const char *s1, const char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
 	size_t	i;
 
