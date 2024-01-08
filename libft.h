@@ -6,7 +6,7 @@
 /*   By: rucorrei <rucorrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/07 20:37:56 by rpcs02            #+#    #+#             */
-/*   Updated: 2024/01/08 18:42:21 by rucorrei         ###   ########.fr       */
+/*   Updated: 2024/01/08 19:07:47 by rucorrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,13 @@ void	ft_putnbr(int n);
 void	ft_putnbr_fd(int fd, int n);
 void	ft_putstr(char *str);
 void	ft_putstr_fd(char *str, int fd);
+int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strcpy(char *dest, char const *src);
-char	*ft_strnew(size_t size);
+int		ft_strequ(const char *s1, const char *s2);
 size_t	ft_strlen(const char *str);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strncpy(char *dest, char const *src, size_t size);
+char	*ft_strnew(size_t size);
 char	ft_tolower(char c);
 char	ft_toupper(char c);
 #endif
