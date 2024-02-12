@@ -6,7 +6,7 @@
 /*   By: rucorrei <rucorrei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/07 20:37:56 by rpcs02            #+#    #+#             */
-/*   Updated: 2024/01/08 22:59:19 by rucorrei         ###   ########.fr       */
+/*   Updated: 2024/02/12 12:44:00 by rucorrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ char	*ft_strncpy(char *dest, const char *src, size_t size);
 char	*ft_strnew(size_t size);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
+char	**ft_strsplit(char const *s, char c);
 char	*ft_strstr(char *haystack, char *needle);
 char	ft_tolower(char c);
 char	ft_toupper(char c);
